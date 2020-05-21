@@ -32,33 +32,27 @@
 <body class="{{ currentUser and currentUser.can('accessCp') ? 'admin' }} {{ craft.app.request.segments|join(' ') }} {% block bodyClass %}{% endblock %}">
 {% include '_partials/ienotice' %}
 
-{% include '_partials/accesibility_panel' %}
-
 <div id="wrapper">
     <a class="sr-only" href="#content">Skip to main content</a>
 
     {% include '_partials/alert' %}
 
     <header id="site-header" class="visible-md visible-lg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <a id="logo" href="{{ siteUrl }}" title="Home" onClick="recordEvent('Header', 'Click', 'Logo');">
-                        <img src="/skin/logo.png" alt="{{ siteName }} Logo" class="img-responsive"/>
-                    </a>
-                </div>
+        <div class="row">
 
-                <div class="col-md-8">
-                    <nav id="full">
-                        {% include '_partials/nav' %}
-                    </nav>
-                </div>
-                <div class="col-md-1 text-center">
-                    <a href="#" id="nav-overlay-button" class="open-overlay"><i class="fas fa-bars"></i></a>
-                </div>
+            <div class="col-md-3">
+                <a id="logo" href="{{ siteUrl }}" title="Home" onClick="recordEvent('Header', 'Click', 'Logo');">
+                    <img src="/skin/logo.svg" alt="{{ siteName }} Logo" class="img-responsive"/>
+                </a>
             </div>
-        </div>
 
+            <div class="col-md-9">
+                <nav id="full">
+                    {% include '_partials/nav' %}
+                </nav>
+            </div>
+
+        </div>
     </header>
 
     <main id="content">

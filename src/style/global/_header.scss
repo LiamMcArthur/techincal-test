@@ -1,6 +1,13 @@
 header#site-header {
-    margin-bottom: 30px;
-    padding-top: 15px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    position: relative;
+
+    z-index: 1;
 
     a#logo {
         display: block;

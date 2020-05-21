@@ -1,3 +1,11 @@
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    @media (max-width: $screen-lg) {
+        font-size: 50%;
+    }
+}
+
 div#ienotice {
     background: #ccc;
     color: #000;
@@ -18,9 +26,8 @@ body {
         padding-top: 56px;
     }
 
-    #wrapper {
-        margin-top: 42px;
-    }
+    // TODO Find out what is causing horizontal overflow, fix and remove this hacky method
+    overflow-x: hidden;
 
 }
 
