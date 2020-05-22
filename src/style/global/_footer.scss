@@ -2,7 +2,7 @@ footer#site-footer {
 
     background: $dark-grey;
 
-    padding-top: 3rem;
+    padding: 3rem 0;
 
     ul {
         margin-bottom: 10px;
@@ -13,6 +13,10 @@ footer#site-footer {
     }
 
     #logo {
+        display: block;
+
+        margin-bottom: 2rem;
+
         > img {
             max-height: 55px;
         }
@@ -28,8 +32,16 @@ footer#site-footer {
         }
 
         p {
-            line-height: 20px;
-            margin-bottom: 10px;
+            font-size: 2rem;
+
+            margin: 0;
+
+            color: $white;
+
+            i {
+                color: $purple;
+            }
+
         }
     }
 
