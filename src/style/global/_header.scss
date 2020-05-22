@@ -26,25 +26,29 @@ header#site-header {
 
             li {
                 display: inline-block;
-                margin-right: 10px;
+                margin-right: 20px;
                 padding: 0;
 
                 a {
-                    color: #000;
+                    color: $white;
                     display: block;
-                    line-height: 50px;
 
                     &:hover {
-                        color: $brand-primary;
+                        color: $white;
                     }
                 }
 
                 &.current,
                 &.parent-current {
                     a {
-                        color: $brand-primary;
+                        color: $white;
                     }
                 }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
             }
         }
     }

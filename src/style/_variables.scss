@@ -13,8 +13,10 @@ $state-warning-bg: #bb875a;
 $yellow: #fff10f;
 $link-hover-color: if(lightness($brand-primary) > 35, darken($brand-primary, 50%), lighten($brand-primary, 50%));
 $border-grey: #f2f5f7;
+
 $white: #fff;
 $black: #000;
+$pink: #E13BFF;
 
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;

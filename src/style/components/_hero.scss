@@ -29,6 +29,12 @@
     opacity: 0.2;
   }
 
+  @media (max-width: $screen-sm-max) {
+    min-height: 100vh;
+
+    margin-top: -60px;
+  }
+
 }
 
   .c-hero__content {
@@ -42,9 +48,15 @@
 
     z-index: 2;
 
+    text-align: center;
+
     @media (max-width: $screen-sm-max) {
       width: 100%;
+
+      margin-top: -15px;
+
       padding: 3rem;
+
     }
 
 
@@ -56,4 +68,12 @@
 
   .c-hero__title {
     font-size: 6rem;
+  }
+
+  .c-hero__paragraph {
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.2;
+
+    margin-bottom: 5rem;
   }
