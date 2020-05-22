@@ -1,9 +1,20 @@
 footer#site-footer {
+
+    background: $dark-grey;
+
+    padding-top: 3rem;
+
     ul {
         margin-bottom: 10px;
 
         li {
             line-height: 20px;
+        }
+    }
+
+    #logo {
+        > img {
+            max-height: 55px;
         }
     }
 
@@ -38,16 +49,36 @@ footer#site-footer {
                 display: inline-block;
                 margin-left: 10px;
             }
+
+            a {
+                color: $white;
+            }
+
         }
     }
 
     ul#social {
+
+        font-size: 3rem;
+
         list-style: none;
         padding: 0;
 
         li {
             display: inline-block;
+
+            margin-right: 2rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
         }
+
+        a {
+            color: $white;
+        }
+
     }
 
     p {
@@ -63,7 +94,7 @@ footer#site-footer {
         }
 
         a {
-            color: #333;
+            color: $white;
 
             img {
                 display: inline-block;

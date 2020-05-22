@@ -64,39 +64,32 @@
             <div class="row">
                 <div class="col-md-7">
                     <div id="contact-details">
-                        <p>&copy; {{ siteName }} / Phone: {{ seomatic.site.creator.genericTelephone }} /
-                            Email: {{ ('<a href="mailto:' ~ seomatic.site.creator.genericEmail ~ '">' ~ seomatic.site.creator.genericEmail ~ '</a>')|encode }}</p>
-
-                        <ul id="social">
-                            <li>
-                                <a href="{{ seomatic.site.sameAsLinks['facebook']['url'] }}" onClick="recordEvent('Footer Facebook', 'Click', 'Facebook');">
-											<span class="fa-stack fa-lg">
-												<i class="fas fa-circle fa-stack-2x"></i>
-												<i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ seomatic.site.sameAsLinks['twitter']['url'] }}" onClick="recordEvent('Footer Twitter', 'Click', 'Twitter');">
-										  	<span class="fa-stack fa-lg">
-												<i class="fas fa-circle fa-stack-2x"></i>
-												<i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ seomatic.site.sameAsLinks['instagram']['url'] }}" onClick="recordEvent('Footer Instagram', 'Click', 'Instagram');">
-										    <span class="fa-stack fa-lg">
-												<i class="fas fa-circle fa-stack-2x"></i>
-												<i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-											</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <a id="logo" href="{{ siteUrl }}" title="Home" onClick="recordEvent('Footer', 'Click', 'Logo');">
+                            <img src="/skin/logo.svg" alt="{{ siteName }} Logo" class="img-responsive"/>
+                        </a>
                     </div>
                 </div>
 
                 <div class="col-md-5 text-right">
+
+                    <ul id="social">
+                        <li>
+                            <a href="{{ seomatic.site.sameAsLinks['facebook']['url'] }}" onClick="recordEvent('Footer Facebook', 'Click', 'Facebook');">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ seomatic.site.sameAsLinks['twitter']['url'] }}" onClick="recordEvent('Footer Twitter', 'Click', 'Twitter');">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ seomatic.site.sameAsLinks['instagram']['url'] }}" onClick="recordEvent('Footer Instagram', 'Click', 'Instagram');">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
                     <nav id="info">
                         <ul>
                             {% cache globally %}
