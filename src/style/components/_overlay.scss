@@ -47,11 +47,20 @@ div#overlay-menu {
     display: none;
     left: 0;
     overflow: scroll;
-    padding: 55px 0;
+    padding: 3rem 0;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 10000;
+
+    #logo {
+        display: block;
+
+        margin-bottom: 3rem;
+        > img {
+            max-height: 49px;
+        }
+    }
 
     @media (min-width: $screen-md-min) {
         padding: 135px 0;
@@ -132,4 +141,10 @@ div#overlay-menu {
             }
         }
     }
+
+    .c-button {
+        display: block;
+        width: 100%;
+    }
+
 }
