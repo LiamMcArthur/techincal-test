@@ -2,7 +2,7 @@
 
 {% set prevAlignment = '' %}
 
-<div class="row row-flex">
+<div>
     {% for block in matrix.all() %}
         {% include ['_matrix/' ~ block.type, '_matrix/missing'] ignore missing with { block: block } %}
 

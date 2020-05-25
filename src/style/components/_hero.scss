@@ -35,6 +35,10 @@
     margin-top: -60px;
   }
 
+  + div {
+    clear: both; // clear the next element
+  }
+
 }
 
   .c-hero__content {
