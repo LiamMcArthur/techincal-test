@@ -8,7 +8,7 @@
         <h1 class="c-hero__title">{{ block.heroTitle }}</h1>
         <p class="c-hero__paragraph">{{  block.heroContent }}</p>
         {% set heroLinkAttributes = {
-            class: ' c-button c-button--primary',
+            class: 'c-button c-button--primary c-button--large',
         } %}
         {{ block.heroLink.link(heroLinkAttributes ) }}
     </div>
