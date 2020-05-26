@@ -13,10 +13,11 @@
 
             <div class="col-md-4">
                 <article>
-                    <img class="c-latest-news__image" src="{{ image.url }}" alt="{{ entry }}"/>
-                    <h3>
-                        <a href="{{ entry.url }}">{{ entry.title }}</a>
-                    </h3>
+                    <a href="{{ entry.url }}">
+                        <img class="c-latest-news__image" src="{{ image.url }}" alt="{{ entry.title }}"/>
+                    </a>
+                    <p>{{ entry.title }}</p>
+                    <span><i class="far fa-clock"></i> {{ entry.postDate | date("M d, Y") }}</span>
                 </article>
             </div>
         {% endfor %}
