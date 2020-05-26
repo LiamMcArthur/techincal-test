@@ -7,7 +7,16 @@
   }
 
   .c-grid-block__content {
-    padding-top: 5rem; // Replace with utility
+    padding: 5rem 0; // Replace with utility
+
+    @media (max-width: $screen-sm-max) {
+      // Replicate container padding for full width blocks
+      padding-left: 15px;
+      padding-right: 15px;
+
+      text-align: center;
+    }
+
   }
 
   .c-grid-block__button {
