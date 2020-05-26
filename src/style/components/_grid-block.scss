@@ -1,0 +1,15 @@
+.c-grid-block {
+  background: $light-grey;
+}
+
+  .c-grid-block__image {
+    width: 100%;
+  }
+
+  .c-grid-block__content {
+    padding-top: 5rem; // Replace with utility
+  }
+
+  .c-grid-block__button {
+    margin-top: 4rem;
+  }

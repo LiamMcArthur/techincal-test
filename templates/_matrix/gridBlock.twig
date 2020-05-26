@@ -1,7 +1,30 @@
 {% import '_includes/utils' as utils %}
 
-<div class="container">
-    <div class="c-grid-block">
-        <p>I'm a grid</p>
+{% set image = block.gridBlockImage.first() %}
+
+<div class="c-grid-block">
+    <div class="row show-grid">
+        <div class="col-md-6">
+            <img class="c-grid-block__image" src="{{ image.url }}" alt="{{ block.gridBlockTitle }}" />
+        </div>
+        <div class="col-md-6">
+            <div class="c-grid-block__content">
+                {% if block.gridBlockTitle %}
+                <h2>{{ block.gridBlockTitle }}</h2>
+                {% endif %}
+
+                {% if block.gridBlockText %}
+                {{ block.gridBlockText }}
+                {% endif %}
+
+                {% if block.gridBlockLink.link %}
+                {% set gridBlockLinkAttributes = {
+                    class: 'c-grid-block__button c-button c-button--purple c-button--large u-display-inline-block',
+                } %}
+                {{ block.gridBlockLink.link(gridBlockLinkAttributes ) }}
+                {% endif %}
+
+            </div>
+        </div>
     </div>
 </div>
