@@ -1,0 +1,25 @@
+{% set latestNewsQuery = craft.entries()
+    .section('news')
+    .limit(block.latestNewsLimit) %}
+
+{% set entries = latestNewsQuery.all() %}
+<div class="c-latest-news">
+    <h2 class="c-latest-news__title">Latest News</h2>
+    <div class="container">
+        <div class="row show-grid">
+        {% for entry in entries %}
+
+            {% set image = entry.thumbImage.first() %}
+
+            <div class="col-md-4">
+                <article>
+                    <img class="c-latest-news__image" src="{{ image.url }}" alt="{{ entry }}"/>
+                    <h3>
+                        <a href="{{ entry.url }}">{{ entry.title }}</a>
+                    </h3>
+                </article>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
