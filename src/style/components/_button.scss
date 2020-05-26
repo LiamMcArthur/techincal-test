@@ -23,4 +23,12 @@
     border: 1px solid $white;
   }
 
+  &--purple {
+    background: $purple;
+  }
+
+  &:hover, &:active {
+    color: $white;
+  }
+
 }
