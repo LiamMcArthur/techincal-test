@@ -1,0 +1,38 @@
+.c-testimonials {
+  background: $pink;
+
+  color: $white;
+
+  padding: 4rem 0;
+
+  .slick-dots li button:before {
+    color: $white;
+  }
+
+}
+
+  .c-testimonials__quote {
+    display: block;
+
+    text-align: center;
+
+    margin-bottom: 3rem;
+
+    i {
+      &:last-child {
+        position: relative;
+        top: 5px;
+      }
+    }
+
+  }
+
+  .c-testimonials__slide {
+    text-align: center;
+
+    span, strong {
+      display: block;
+
+      font-style: italic;
+    }
+  }
